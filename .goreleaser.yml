@@ -2,7 +2,8 @@ before:
   hooks:
     - go mod download
 builds:
-- env:
+- binary: bin/entrypoint
+  env:
   - CGO_ENABLED=0
   goos:
     - aix
